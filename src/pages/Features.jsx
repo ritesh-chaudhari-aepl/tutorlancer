@@ -36,13 +36,13 @@ const Features = () => {
               />
               <SmallCard
                 icon={<CiDiscount1 size={20} />}
-                bgColor="#E0F5E9"
+                bgColor="bg-green-light"
                 title="Competitive pricing"
                 iconColor='#1FAF38'
               />
               <SmallCard
                 icon={<BiFileFind size={20} />}
-                bgColor="#FFDCE5"
+                bgColor="bg-pink-light"
                 title="Plagraism free"
                 iconColor='#FF1850'
               />
@@ -50,11 +50,11 @@ const Features = () => {
                 icon={<RiRefund2Line size={20} />}
                 title="Refundable"
                 iconColor='#952AFF'
-                bgColor="#EFDEFF"
+                bgColor="bg-violet-light"
               />
               <SmallCard
                 icon={<BiRevision size={20} />}
-                bgColor="#E0F5E9"
+                bgColor="bg-green-light"
                 title="Unilimited revision"
                 iconColor='#1FAF38'
               />

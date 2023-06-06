@@ -1,6 +1,8 @@
 import user from "../assets/user.svg";
 import find from "../assets/find.svg";
 import MainCard from "../components/cards/MainCard";
+import im from '../assets/im.png'
+import {BsImage} from 'react-icons/bs'
 
 const About = () => {
   return (
@@ -27,14 +29,14 @@ const About = () => {
               <div className="px-4 mt-14 sm:mt-0 md:gap-8 md:grid md:grid-cols-2 ">
                 <MainCard
                   icon={user}
-                  iconBgColor="bg-blue-blue"
+                  iconBgColor="bg-violet-dark"
                   title="Online tutoring"
                   description="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the 1500s, when"
                 />
                 <MainCard
                   icon={find}
                   iconBgColor="bg-green-lime"
-                  title="Online tutoring"
+                  title="Homework Help"
                   description="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the 1500s, when"
                 />
               </div>
@@ -42,15 +44,15 @@ const About = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 px-4 gap-4 sm:mt-4 sm:gap-5 lg:grid-cols-4 ">
             <MainCard
-              icon={find}
-              iconBgColor="bg-green-lime"
-              title="Online tutoring"
+              icon={<BsImage color='bg-white' />}
+              iconBgColor="bg-blue-slateBlue"
+              title="Live Sessions"
               description="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the 1500s, when"
             />
             <MainCard
-                  icon={find}
+                  icon={im}
                   iconBgColor="bg-green-lime"
-                  title="Online tutoring"
+                  title="Homework Help"
                   description="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the 1500s, when"
                 />
                 <MainCard

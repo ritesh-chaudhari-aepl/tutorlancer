@@ -1,4 +1,4 @@
-import phone from "../assets/phn.png";
+import phone from "../assets/phn.gif";
 
 const Footer = () => {
   return (

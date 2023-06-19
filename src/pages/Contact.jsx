@@ -1,51 +1,52 @@
 import "./style.css";
 import { useState } from "react";
 
+const baseUrl =
+  "https://dev6apis.el.r.appspot.com/api/deviceWeb/saveDeviceWebData";
+
 const Contact = () => {
-  const handleClick = () => {
-    const [name, setName] = useState();
-    const [email, setEmail] = useState();
-    const [phone, setPhone] = useState();
-    const [subject, setSubject] = useState();
-    const [message, setMessage] = useState();
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [phone, setPhone] = useState();
+  const [subject, setSubject] = useState();
+  const [message, setMessage] = useState();
 
-    const handleFormSubmit = async (e) => {
-      try {
-        e.preventDefault();
-        let bodyData = {
-          device_number: "Device 10",
-          name: name,
-          email: email,
-          phone: phone,
-          subject: subject,
-          contactMessage: message,
-        };
+  const handleFormSubmit = async (e) => {
+    try {
+      e.preventDefault();
+      let bodyData = {
+        device_number: "Device 10",
+        name: name,
+        email: email,
+        phone: phone,
+        subject: subject,
+        contactMessage: message,
+      };
 
-        const response = await fetch(baseUrl, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
+      const response = await fetch(baseUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
 
-          body: JSON.stringify(bodyData),
-        });
+        body: JSON.stringify(bodyData),
+      });
 
-        const data = await response.json();
-        console.log(data);
-        //toast.success("Message Sent Successfully", {
-        //     position: toast.POSITION.TOP_RIGHT,
-        //   });
-        // };
+      const data = await response.json();
+      console.log(data);
+      //toast.success("Message Sent Successfully", {
+      //     position: toast.POSITION.TOP_RIGHT,
+      //   });
+      // };
 
-        setName("");
-        setEmail("");
-        setPhone("");
-        setSubject("");
-        setMessage("");
-      } catch (err) {
-        console.log(err.message);
-      }
-    };
+      setName("");
+      setEmail("");
+      setPhone("");
+      setSubject("");
+      setMessage("");
+    } catch (err) {
+      console.log(err.message);
+    }
   };
 
   return (
@@ -56,13 +57,14 @@ const Contact = () => {
         </h3>
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className=" p-8 lg:col-span-3 lg:p-12">
-            <form action="" onSubmit={handleClick} className="space-y-4">
+            <form action="" onSubmit={handleFormSubmit} className="space-y-4">
               <div className="flex flex-row gap-4">
                 <label className="sr-only" htmlFor="name">
                   Name
                 </label>
                 <input
                   value={name}
+                  required
                   onChange={(e) => setName(e.target.value)}
                   className="w-full rounded-lg bg-white border-gray-200 p-3 text-sm"
                   placeholder="Name"
@@ -73,7 +75,8 @@ const Contact = () => {
                   Email
                 </label>
                 <input
-                  value={name}
+                  required
+                  value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full rounded-lg bg-white border-gray-200 p-3 text-sm"
                   placeholder="Email address"
@@ -97,7 +100,8 @@ const Contact = () => {
                   Subject
                 </label>
                 <input
-                  value={name}
+                  required
+                  value={subject}
                   onChange={(e) => setSubject(e.target.value)}
                   className="w-full rounded-lg bg-white border-gray-200 p-3 text-sm"
                   placeholder="Subject"
@@ -108,7 +112,8 @@ const Contact = () => {
                   Phone
                 </label>
                 <input
-                  value={name}
+                  required
+                  value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   className="w-full rounded-lg bg-white border-gray-200 p-3 text-sm"
                   placeholder="Phone Number"
@@ -124,7 +129,8 @@ const Contact = () => {
                 </label>
 
                 <textarea
-                  value={name}
+                  required
+                  value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   className="w-full rounded-lg bg-white border-gray-200 p-3 text-sm"
                   placeholder="Message"

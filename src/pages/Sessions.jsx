@@ -90,14 +90,18 @@ const Sessions = () => {
 
               <div className="lg:py-24">
                 <h2 className="text-3xl font-bold font-Inter capitalize sm:leading-[66px] sm:text-[50px]">
-                  we have highly expert & experienced tutors
+                  Get all your Assignments/Projects covered by our highly
+                  experienced teams of Writers
                 </h2>
 
                 <p className="mt-4 text-gray-600">
-                  lorem ipsum is simply dummy text of the printing and
-                  typesetting industry. lorem ipsum has been the industry’s
-                  standard dummy text ever since the 1500s lorem ipsum has been
-                  the industry’s standard dummy text ever since the 1500s
+                  We know that students coming to our essay writing service
+                  expect us to provide them with original content. That's
+                  exactly what we do. We write a paper from scratch while
+                  following your instructions.We assign expert tutors to ensure
+                  students get detailed, step-by-step solutions for their
+                  assignments.Students across the UK and other countries know
+                  who and how professional we are.
                 </p>
 
                 <a

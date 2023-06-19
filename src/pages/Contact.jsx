@@ -1,7 +1,7 @@
-import './style.css'
+import "./style.css";
 const Contact = () => {
   return (
-    <section className="bg-primaryWhite">
+    <section id="contact" className="bg-primaryWhite">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <h3 className="text-center font-bold font-QuickSand text-3xl  sm:text-[28px]">
           Contact Us <br />

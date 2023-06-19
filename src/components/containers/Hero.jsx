@@ -27,17 +27,18 @@ const Hero = () => {
             <div className="">
               <div className="flex gap-2 mb-4 items-center sm:flex-row sm:gap-3">
                 <img src={torch} alt="torch" className="w-[12px]" />
-                <span className="capitalize font-Inter font-semibold text-sm ">best e-learning platform</span>
+                <span className="capitalize font-Inter font-semibold text-sm ">
+                  best e-learning platform
+                </span>
               </div>
-              <h1 className="text-6xl font-bold capitalize xl:text-[67px] xl:leading-[77px] mb-4">
-                getting best <br />quality education<br /> is now more <span>easier</span>
+              <h1 className="text-6xl md:w1/2 font-bold capitalize xl:text-[67px] xl:leading-[77px] mb-4">
+                {/* getting best <br />quality education<br /> is now more <span>easier</span> */}
+                The Best Way to take help in your academic
               </h1>
 
               <p className="mt-4 text-gray-600">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
-                qui hic atque tenetur quis eius quos ea neque sunt, accusantium
-                soluta minus veniam tempora deserunt? Molestiae eius quidem quam
-                repellat.
+                Hire us for quality solutions to all your coursework at
+                affordable prices.
               </p>
 
               <div className=" mt-8 mb-6 flex flex-col gap-10 sm:flex-row sm:gap-6">
@@ -65,7 +66,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-        <Banner />
+      <Banner />
     </section>
   );
 };

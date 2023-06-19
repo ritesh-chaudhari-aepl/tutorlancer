@@ -5,6 +5,7 @@ import { HiOutlineX } from "react-icons/hi";
 import { AiOutlineMenu } from "react-icons/ai";
 import MobileNav from "../navbar/MobileNav";
 import Nav from "../navbar/Navbar";
+import logo from "../../assets/D13_Logo.png";
 
 function Header({ myRef }) {
   // mobile nav state
@@ -30,24 +31,25 @@ function Header({ myRef }) {
       <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 flex justify-between items-center">
         {/* logo */}
         <a href="#">
-          <span  className="font-Inter font-bold tracking-[10px] text-2xl uppercase sm:text-[30px]">LOGO</span>
+          {/* <span  className="font-Inter font-bold tracking-[10px] text-2xl uppercase sm:text-[30px]">LOGO</span> */}
+          <img src={logo} className="w-24" />
         </a>
         {/* nav - initially hidden - show on desktop mode */}
         <div className="hidden lg:flex lg:items-center lg:gap-3">
           <Nav ref={myRef} />
         </div>
         <div className="hidden lg:block">
-        <a
+          <a
             href="#"
             className="inline-block rounded-full bg-transparent px-3 py-4 text-sm font-medium text-black transition hover:bg-indigo-700 capitalize"
           >
-           Sign Up
+            Sign Up
           </a>
           <a
             href="#"
             className="inline-block rounded-full bg-yellow-dark px-8 py-4 text-sm font-medium text-black transition hover:bg-indigo-700 capitalize"
           >
-           Sign Up
+            Sign Up
           </a>
         </div>
         {/* cta button - initially hidden - show on desktop mode */}

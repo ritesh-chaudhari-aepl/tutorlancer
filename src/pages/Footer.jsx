@@ -1,4 +1,4 @@
-import phone from "../assets/phn.gif";
+import phone from "../assets/phone.gif";
 
 const Footer = () => {
   return (
@@ -64,11 +64,11 @@ const Footer = () => {
 
             <div>
               {/* mobile image */}
-              <img
+              {/* <img
                 src={phone}
                 alt="phone"
                 className="absolute lg:left-72 hidden md:block -top-72 h-96 lg:h-[30rem]"
-              />
+              /> */}
             </div>
           </div>
         </div>

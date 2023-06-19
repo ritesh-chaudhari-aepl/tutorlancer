@@ -69,7 +69,7 @@
 //             <span className="text-[15px] font-QuickSand font-light leading-0 text-center">
 //               clients rate on
 //               <br />
-//               tutorlancer
+//               geniustutor
 //             </span>
 //           </div>
 //         </div>
@@ -160,7 +160,7 @@ const Download = () => {
             <span className="text-[15px] font-OpenSans font-light leading-0 text-center">
               clients rate on
               <br />
-              tutorlancer
+              geniustutor
             </span>
           </div>
         </div>

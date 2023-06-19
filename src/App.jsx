@@ -2,7 +2,7 @@
 import Header from "./components/header/Header";
 import Hero from "./components/containers/Hero";
 import About from "./pages/About";
-import Instructor from "./components/containers/Instructor";
+// import Instructor from "./components/containers/Instructor";
 import Features from "./pages/Features";
 import Sessions from "./pages/Sessions";
 import Testimonials from "./pages/Testimonials";
@@ -16,7 +16,7 @@ const App = () => {
       <Header />
       <Hero />
       <About />
-      <Instructor />
+      {/* <Instructor /> */}
       <Features />
       <Sessions />
       <Testimonials />

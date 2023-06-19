@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { HiOutlineX } from "react-icons/hi";
 import { AiOutlineMenu } from "react-icons/ai";
+import { BsWhatsapp } from "react-icons/bs";
 import MobileNav from "../navbar/MobileNav";
 import Nav from "../navbar/Navbar";
 import logo from "../../assets/D13_Logo.png";
@@ -39,17 +40,18 @@ function Header({ myRef }) {
           <Nav ref={myRef} />
         </div>
         <div className="hidden lg:block">
-          <a
+          {/* <a
             href="#"
             className="inline-block rounded-full bg-transparent px-3 py-4 text-sm font-medium text-black transition hover:bg-indigo-700 capitalize"
           >
             Sign Up
-          </a>
+          </a> */}
           <a
             href="#"
-            className="inline-block rounded-full bg-yellow-dark px-8 py-4 text-sm font-medium text-black transition hover:bg-indigo-700 capitalize"
+            className="flex gap-2 items-center rounded-full bg-green-dark px-8 py-4 text-sm font-medium text-white transition hover:bg-indigo-700 capitalize"
           >
-            Sign Up
+            <BsWhatsapp className="text-xl font-bold"/>
+            Chat on Whatsapp
           </a>
         </div>
         {/* cta button - initially hidden - show on desktop mode */}

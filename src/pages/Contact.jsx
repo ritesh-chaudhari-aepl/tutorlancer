@@ -1,5 +1,53 @@
 import "./style.css";
+import { useState } from "react";
+
 const Contact = () => {
+  const handleClick = () => {
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [phone, setPhone] = useState();
+    const [subject, setSubject] = useState();
+    const [message, setMessage] = useState();
+
+    const handleFormSubmit = async (e) => {
+      try {
+        e.preventDefault();
+        let bodyData = {
+          device_number: "Device 10",
+          name: name,
+          email: email,
+          phone: phone,
+          subject: subject,
+          contactMessage: message,
+        };
+
+        const response = await fetch(baseUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+
+          body: JSON.stringify(bodyData),
+        });
+
+        const data = await response.json();
+        console.log(data);
+        //toast.success("Message Sent Successfully", {
+        //     position: toast.POSITION.TOP_RIGHT,
+        //   });
+        // };
+
+        setName("");
+        setEmail("");
+        setPhone("");
+        setSubject("");
+        setMessage("");
+      } catch (err) {
+        console.log(err.message);
+      }
+    };
+  };
+
   return (
     <section id="contact" className="bg-primaryWhite">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
@@ -8,13 +56,15 @@ const Contact = () => {
         </h3>
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className=" p-8 lg:col-span-3 lg:p-12">
-            <form action="" className="space-y-4">
+            <form action="" onSubmit={handleClick} className="space-y-4">
               <div className="flex flex-row gap-4">
                 <label className="sr-only" htmlFor="name">
                   Name
                 </label>
                 <input
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="w-full rounded-lg bg-white border-gray-200 p-3 text-sm"
                   placeholder="Name"
                   type="text"
                   id="name"
@@ -23,36 +73,50 @@ const Contact = () => {
                   Email
                 </label>
                 <input
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  value={name}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full rounded-lg bg-white border-gray-200 p-3 text-sm"
                   placeholder="Email address"
                   type="email"
                   id="email"
                 />
               </div>
 
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {/* <div>
+              {/* <div className="grid grid-cols-1 gap-4 sm:grid-cols-2"> */}
+              {/* <div>
               <label className="sr-only" htmlFor="email">Email</label>
               <input
-                className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                className="w-full rounded-lg bg-white border-gray-200 p-3 text-sm"
                 placeholder="Email address"
                 type="email"
                 id="email"
               />
             </div> */}
-
-                <div>
-                  <label className="sr-only" htmlFor="phone">
-                    Subject
-                  </label>
-                  <input
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                    placeholder="Subject"
-                    type="text"
-                    id="subject"
-                  />
-                </div>
+              <div className="flex flex-row gap-4">
+                <label className="sr-only" htmlFor="phone">
+                  Subject
+                </label>
+                <input
+                  value={name}
+                  onChange={(e) => setSubject(e.target.value)}
+                  className="w-full rounded-lg bg-white border-gray-200 p-3 text-sm"
+                  placeholder="Subject"
+                  type="text"
+                  id="subject"
+                />
+                <label className="sr-only" htmlFor="email">
+                  Phone
+                </label>
+                <input
+                  value={name}
+                  onChange={(e) => setPhone(e.target.value)}
+                  className="w-full rounded-lg bg-white border-gray-200 p-3 text-sm"
+                  placeholder="Phone Number"
+                  type="phone"
+                  id="phone"
+                />
               </div>
+              {/* </div> */}
 
               <div>
                 <label className="sr-only" htmlFor="message">
@@ -60,7 +124,9 @@ const Contact = () => {
                 </label>
 
                 <textarea
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  value={name}
+                  onChange={(e) => setMessage(e.target.value)}
+                  className="w-full rounded-lg bg-white border-gray-200 p-3 text-sm"
                   placeholder="Message"
                   rows="8"
                   id="message"
@@ -69,8 +135,9 @@ const Contact = () => {
 
               <div className="mt-4">
                 <button
+                  // onClick={handleFormSubmit}
                   type="submit"
-                  className="inline-block uppercase w-full rounded-full bg-pink-900 px-5 py-3 font-light text-white sm:w-auto"
+                  className="inline-block uppercase w-full rounded-full bg-yellow-dark px-5 py-3 text-white sm:w-auto"
                 >
                   Send Message
                 </button>

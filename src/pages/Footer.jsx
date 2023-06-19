@@ -1,4 +1,4 @@
-import phone from "../assets/phone.gif";
+import logo from "../assets/D13_Logo.png";
 
 const Footer = () => {
   return (
@@ -7,13 +7,14 @@ const Footer = () => {
         <div className="flex flex-col gap lg:flex-row lg:gap-28">
           <div className="flex flex-col">
             <div className="flex justify-center text-white sm:justify-start">
-              <span className="text-[25px] tracking-[10px] border border-white p-2">
+              {/* <span className="text-[25px] tracking-[10px] border border-white p-2">
                 LOGO
-              </span>
+              </span> */}
+              <img src={logo} className="w-24" />
             </div>
             <div className="flex flex-col mt-10 gap-2 leading-[30px] ">
               <span className="font-inter">
-                <strong>Email</strong>: support@thetutorlancer.com
+                <strong>Email</strong>: support@thegeniustutor.com
               </span>
               <span className="font-inter">
                 <strong>Phone</strong>: +91 628940944
@@ -35,7 +36,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-white transition hover:text-white/75"
-                      href="/"
+                      href="#services"
                     >
                       Online Tutoring
                     </a>
@@ -44,7 +45,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-white transition hover:text-white/75"
-                      href="/"
+                      href="#services"
                     >
                       Homework Help
                     </a>
@@ -53,9 +54,36 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-white transition hover:text-white/75"
-                      href="/"
+                      href="#services"
                     >
                       Live Session
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      className="text-white transition hover:text-white/75"
+                      href="#services"
+                    >
+                      Lab Work
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      className="text-white transition hover:text-white/75"
+                      href="#services"
+                    >
+                      Project Help
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      className="text-white transition hover:text-white/75"
+                      href="#services"
+                    >
+                      Writing Help
                     </a>
                   </li>
                 </ul>
@@ -108,7 +136,7 @@ const Footer = () => {
           </div>
 
           <p className="mt-4 text-[10px] sm:text-sm text-gray-500 sm:order-first sm:mt-0">
-            © 2022 thetutorlancer.com. All rights reserved Abhay Education Pvt.
+            © 2022 thegeniustutor.com. All rights reserved Abhay Education Pvt.
             Ltd.
           </p>
         </div>

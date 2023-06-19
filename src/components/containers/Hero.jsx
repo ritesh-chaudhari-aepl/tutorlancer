@@ -44,7 +44,7 @@ const Hero = () => {
               <div className=" mt-8 mb-6 flex flex-col gap-10 sm:flex-row sm:gap-6">
                 <div>
                   <a
-                    href="#"
+                    href="#contact"
                     className="inline-block rounded-full bg-yellow-dark px-12 py-4 text-sm font-medium text-black transition hover:bg-indigo-700 capitalize"
                   >
                     join course
@@ -52,7 +52,7 @@ const Hero = () => {
                 </div>
                 <div className="flex flex-row gap-3 items-center sm:only:justify-center">
                   <a
-                    href="#"
+                    href="#sessions"
                     className="inline-block rounded-full bg-blue-blue p-3 text-sm font-medium text-white transition hover:bg-blue-darkBlue focus:outline-none "
                   >
                     <BsFillPlayFill size={25} />

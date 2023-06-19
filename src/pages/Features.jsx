@@ -6,7 +6,7 @@ import SmallCard from "../components/cards/SmallCard";
 
 const Features = () => {
   return (
-    <section className="bg-primaryWhite">
+    <section id="features" className="bg-primaryWhite">
       <div className="mx-auto max-w-screen-xl">
         <div className=" py-10 md:py-24">
           <div className="mb-16">

@@ -6,9 +6,9 @@ import bg from "../assets/bg.png";
 
 const Sessions = () => {
   return (
-    <section className="bg-primaryWhite">
+    <section id="sessions" className="bg-primaryWhite">
       <div className="mx-auto max-w-screen-xl mt-16 sm:mt-0">
-        <div>
+        <section>
           <div className=" mb-24">
             <h3 className="capitalize font-Inter text-4xl leading-[50px] px-3 sm:px-0 font-bold text-center sm:text-[49px] sm:leading-[60px] mb-6">
               online sessions with the best tutors
@@ -76,8 +76,8 @@ const Sessions = () => {
               </div>
             </div>
           </div>
-        </div>
-        <section className="lg:mt-28 mt-10 px-10">
+        </section>
+        <section id="about" className="lg:mt-28 mt-10 px-10">
           <div className="py-8 sm:py-24">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-20">
               <div className="relative h-52 sm:h-80 lg:order-last lg:h-full">

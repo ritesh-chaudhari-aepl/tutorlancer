@@ -1,8 +1,4 @@
-// import user from "../assets/user.svg";
-// import find from "../assets/find.svg";
 import MainCard from "../components/cards/MainCard";
-// import im from "../assets/im.png";
-// import { BsImage } from "react-icons/bs";
 import service1 from "../assets/service1.png";
 import service2 from "../assets/service2.png";
 import service3 from "../assets/service3.png";
@@ -26,15 +22,17 @@ const About = () => {
                   Get all your Assignments/Projects covered by our highly
                   experienced teams of Writers.
                 </p>
-                <button
-                  href="#contact"
-                  className="bg-yellow-dark text-black px-8 py-3 rounded-full sm:mb-10 sm:ml-0 ml-24 mt-6"
-                >
-                  Start now
-                </button>
+                <div className="mt-10">
+                  <a
+                    href="#contact"
+                    className="bg-yellow-dark text-black px-8 py-3 rounded-full sm:mb-10 sm:ml-0 ml-24 mt-6"
+                  >
+                    Start now
+                  </a>
+                </div>
               </div>
               {/* card components */}
-              <div className="px-4 mt-14 sm:mt-0 md:gap-8 md:grid md:grid-cols-2 ">
+              <div className="px-4 mt-14 sm:pt-4 lg:pt-2 sm:mt-0 md:gap-8 md:grid md:grid-cols-2 ">
                 <MainCard
                   icon={service1}
                   // iconBgColor="bg-violet-dark"

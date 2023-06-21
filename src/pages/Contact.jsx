@@ -1,8 +1,10 @@
 import "./style.css";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import axios from "axios";
 
-const baseUrl =
-  "https://dev6apis.el.r.appspot.com/api/deviceWeb/saveDeviceWebData";
+// const baseUrl =
+//   "https://dev6apis.el.r.appspot.com/api/deviceWeb/saveDeviceWebData";
 
 const Contact = () => {
   const [name, setName] = useState();
@@ -11,41 +13,74 @@ const Contact = () => {
   const [subject, setSubject] = useState();
   const [message, setMessage] = useState();
 
-  const handleFormSubmit = async (e) => {
-    try {
-      e.preventDefault();
-      let bodyData = {
-        device_number: "Device 10",
-        name: name,
-        email: email,
-        phone: phone,
-        subject: subject,
-        contactMessage: message,
-      };
+  // const handleFormSubmit = async (e) => {
+  //   try {
+  //     e.preventDefault();
+  //     let bodyData = {
+  //       device_number: "Device 10",
+  //       name: name,
+  //       email: email,
+  //       phone: phone,
+  //       subject: subject,
+  //       contactMessage: message,
+  //     };
 
-      const response = await fetch(baseUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+  //     const response = await fetch(baseUrl, {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
 
-        body: JSON.stringify(bodyData),
+  //       body: JSON.stringify(bodyData),
+  //     });
+
+  //     const data = await response.json();
+  //     console.log(data);
+
+  //     setName("");
+  //     setEmail("");
+  //     setPhone("");
+  //     setSubject("");
+  //     setMessage("");
+  //   } catch (err) {
+  //     console.log(err.message);
+  //   }
+  // };
+
+  const showToastMessage = async () => {
+    const data = {
+      device_number: "Device 10",
+      name,
+      email,
+      phone,
+      subject,
+      message,
+    };
+    if (!name || !email || !phone || !subject || !message) {
+      toast.warning("Please fill all required data.", {
+        position: toast.POSITION.TOP_RIGHT,
       });
+      return;
+    }
 
-      const data = await response.json();
-      console.log(data);
-      //toast.success("Message Sent Successfully", {
-      //     position: toast.POSITION.TOP_RIGHT,
-      //   });
-      // };
-
-      setName("");
-      setEmail("");
-      setPhone("");
-      setSubject("");
-      setMessage("");
-    } catch (err) {
-      console.log(err.message);
+    const sendData = await axios.post(
+      "https://dev6apis.el.r.appspot.com/api/deviceWeb/saveDeviceWebData",
+      data
+    );
+    console.log(sendData.data.success);
+    if (sendData.data.success) {
+      toast.success("Message Sent Successfully", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+      setName();
+      setEmail();
+      setPhone();
+      setSubject();
+      setMessage();
+    } else {
+      toast.error("Something went wrong", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
     }
   };
 
@@ -57,7 +92,7 @@ const Contact = () => {
         </h3>
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className=" p-8 lg:col-span-3 lg:p-12">
-            <form action="" onSubmit={handleFormSubmit} className="space-y-4">
+            <form action="" onSubmit={showToastMessage} className="space-y-4">
               <div className="flex flex-row gap-4">
                 <label className="sr-only" htmlFor="name">
                   Name
@@ -147,6 +182,7 @@ const Contact = () => {
                 >
                   Send Message
                 </button>
+                <ToastContainer />
               </div>
             </form>
           </div>

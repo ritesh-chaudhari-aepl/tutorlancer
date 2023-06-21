@@ -1,4 +1,4 @@
-import logo from "../assets/D13_Logo.png";
+import logo from "../assets/logo-wthout-bg.png";
 
 const Footer = () => {
   return (
@@ -101,7 +101,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-12 w-full border-t border-white pt-6 pb-12">
+      <div className="mt-12 sm:flex place-content-center md:block w-full border-t border-white pt-6 pb-12">
         <div className=" mx-auto max-w-screen-xl px-4 text-center sm:flex sm:justify-between sm:text-left">
           <div className="flex flex-row">
             <div className="flex flex-row gap-3 ">

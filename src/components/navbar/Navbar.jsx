@@ -9,7 +9,7 @@ function Navbar() {
           const { href, name } = item;
           return (
             <li key={item.name}>
-              <a
+              <a onClick={}
                 className="text-black hover:text-red-400  rounded-md font-Inter sm:text-base font-bold transition"
                 href={href}
               >

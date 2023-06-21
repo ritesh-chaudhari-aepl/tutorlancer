@@ -3,20 +3,20 @@ import { BsWhatsapp } from "react-icons/bs";
 
 function MobileNav() {
   return (
-    <div className="bg-green-lime w-full h-full">
+    <div className="bg-white w-full h-full">
       <ul className="h-full flex flex-col justify-center no-underline items-center gap-y-8">
         {nav.map((item) => {
           // destructure item
           const { href, name } = item;
           return (
             <li className="no-underline" key={item.name}>
-              <a className="link text-white-white text-xl" href={href}>
+              <a className="link text-black text-xl" href={href}>
                 {name}
               </a>
             </li>
           );
         })}
-        <div className="item-center justify-center gap-8 flex flex-col lg:hidden">
+        <div className="item-center justify-center gap-8 flex flex-col">
           {/* <a
             href="#"
             className="inline-block rounded-full bg-transparent px-8 py-4 text-sm font-medium text-black transition hover:bg-indigo-700 capitalize"

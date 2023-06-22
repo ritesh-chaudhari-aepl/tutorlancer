@@ -72,11 +72,11 @@ const Contact = () => {
       toast.success("Message Sent Successfully", {
         position: toast.POSITION.TOP_RIGHT,
       });
-      setName();
-      setEmail();
-      setPhone();
-      setSubject();
-      setMessage();
+      setName("");
+      setEmail("");
+      setPhone("");
+      setSubject("");
+      setMessage("");
     } else {
       toast.error("Something went wrong", {
         position: toast.POSITION.TOP_RIGHT,

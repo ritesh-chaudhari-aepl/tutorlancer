@@ -32,7 +32,9 @@ function MobileNav() {
         })}
         <div className="item-center justify-center gap-8 flex flex-col lg:hidden">
           <a
-            href="https://wa.me/message/YDN55FCB47BJK1 "
+            href="https://wa.me/message/YDN55FCB47BJK1"
+            target="_blank"
+            rel="noreferrer"
             className="flex gap-2 items-center rounded-full bg-green-dark md:px-8 md:py-4 px-3 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 capitalize"
           >
             <BsWhatsapp className="md:text-xl md:font-bold text-lg font-normal" />

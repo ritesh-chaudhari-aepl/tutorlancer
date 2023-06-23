@@ -14,9 +14,8 @@ const Features = () => {
               Features
             </h3>
             <p className="text-center text-sm mt-3 font-semibold font-Inter sm:text-base sm:leading-[27px]">
-              lorem ipsum is simply dummy the of the printing and typesetting
-              industry.
-              <br /> lorem ipsum has been the 1500s, when
+              Grades Achievers is focused on ensuring to meet the needs of the
+              students around the globe for their assignments.
             </p>
           </div>
 

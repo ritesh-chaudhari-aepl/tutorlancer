@@ -108,7 +108,7 @@ const Footer = () => {
             <div className="flex flex-row gap-3 ">
               <a
                 className="inline-block text-white transition hover:text-white/75"
-                href="/"
+                href="/termsandcondition"
               >
                 Terms & Conditions
               </a>
@@ -119,7 +119,7 @@ const Footer = () => {
             <div className="flex flex-row gap-3 ">
               <a
                 className="inline-block text-teal-600 transition hover:text-teal-600/75"
-                href="/"
+                href="/privacy"
               >
                 Privacy Policy
               </a>
@@ -129,7 +129,7 @@ const Footer = () => {
             <div className="flex sm:flex-row gap-3 ">
               <a
                 className="inline-block text-teal-600 transition hover:text-teal-600/75"
-                href="/"
+                href="/refund"
               >
                 Refund
               </a>

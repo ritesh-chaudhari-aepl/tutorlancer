@@ -1,27 +1,23 @@
 // import Hero from "./components/containers/Hero";
 import Header from "./components/header/Header";
-import Hero from "./components/containers/Hero";
-import About from "./pages/About";
-// import Instructor from "./components/containers/Instructor";
-import Features from "./pages/Features";
-import Sessions from "./pages/Sessions";
-import Testimonials from "./pages/Testimonials";
-import Download from "./pages/Download";
 import Footer from "./pages/Footer";
-import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import { Route, Routes } from "react-router-dom";
+import Refund from "./pages/termAmdConditions/termAmdConditions/refund";
+import PrivatePolocies from "./pages/termAmdConditions/termAmdConditions/privatePolocies";
+import Terms from "./pages/termAmdConditions/termAmdConditions/terms";
 
 const App = () => {
   return (
     <div className="bg-primaryWhite">
       <Header />
-      <Hero />
-      <About />
-      {/* <Instructor /> */}
-      <Features />
-      <Sessions />
-      <Testimonials />
-      <Contact />
-      <Download />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/refund" element={<Refund />} />
+        <Route path="/privacy" element={<PrivatePolocies />} />
+        <Route path="/termsandcondition" element={<Terms />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
       <Footer />
     </div>
   );

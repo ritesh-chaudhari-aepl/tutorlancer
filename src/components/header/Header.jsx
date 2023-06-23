@@ -35,9 +35,9 @@ function Header({ myRef }) {
     <header
       className={`${
         isActive
-          ? "top-0 z-30 sm:top-0 sm:py-10 bg-primaryWhite shadow-2xl overflow-hidden"
+          ? "top-0 z-30 sm:top-0 sm:py-4 bg-primaryWhite shadow-2xl overflow-hidden"
           : "top-0 sm:top-0 py-10"
-      } py-4 sm:py-8 fixed w-full transition-all z-10 bg-primaryWhite`}
+      } py-4 sm:py-0 fixed w-full transition-all z-10 bg-primaryWhite`}
     >
       <div className="mx-auto max-w-screen-2xl lg:max-w-screen-xl px-4 pt-3 sm:px-6 flex justify-between items-center">
         {/* logo */}
@@ -45,7 +45,7 @@ function Header({ myRef }) {
           {/* <span className="font-Inter font-bold tracking-[10px] text-2xl uppercase sm:text-[30px]">
             LOGO
           </span> */}
-          <img src={logo} className="w-24" />
+          <img src={logo} className="w-20 md:w-24" />
         </a>
         {/* nav - initially hidden - show on desktop mode */}
         {/* <div className="hidden sm:flex lsm:items-center sm:gap-3"> */}
@@ -70,7 +70,7 @@ function Header({ myRef }) {
           {/* cta button - initially hidden - show on desktop mode */}
           {/* mobile nav trigger btn - hidden on desktop */}
           <button
-            className="lg:hidden md:ml-4 ml-2"
+            className="lg:hidden md:ml-4 ml-1"
             onClick={() => setMobileNav(!mobileNav)}
           >
             {mobileNav ? (

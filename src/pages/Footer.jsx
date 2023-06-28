@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col mt-10 gap-2 leading-[30px] ">
               <span className="font-inter">
-                <strong>Email</strong>: support@thegradesachievers.com
+                <strong>Email</strong>: support@thegeniustutor.com
               </span>
               <span className="font-inter">
                 <strong>Phone</strong>:{" "}
@@ -137,8 +137,8 @@ const Footer = () => {
           </div>
 
           <p className="mt-4 text-[10px] sm:text-sm text-gray-500 sm:order-first sm:mt-0">
-            © 2022 thegradesachievers.com. All rights reserved Abhay Education
-            Pvt. Ltd.
+            © 2022 thegeniustutor.com. All rights reserved Abhay Education Pvt.
+            Ltd.
           </p>
         </div>
       </div>

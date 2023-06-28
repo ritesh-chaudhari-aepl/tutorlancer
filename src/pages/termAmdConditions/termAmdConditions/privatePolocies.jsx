@@ -41,10 +41,10 @@ const PrivatePolocies = () => {
         Use and sharing of Information
       </h1>
       <p className="p-2 font-sans text-base">
-        Gradesachievers.com reserves the right to modify this privacy statement
-        any time, so please review it frequently. Any changes made to above
-        policy will be posted here and your continued use of the site, services
-        and/or software constitutes your agreement to be bound by such changes.
+        geniustutor.com reserves the right to modify this privacy statement any
+        time, so please review it frequently. Any changes made to above policy
+        will be posted here and your continued use of the site, services and/or
+        software constitutes your agreement to be bound by such changes.
       </p>
       <p className="p-2 font-sans text-base">
         We value your privacy and would like to inform you that you would be

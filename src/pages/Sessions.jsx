@@ -6,9 +6,9 @@ import bg from "../assets/bg.png";
 
 const Sessions = () => {
   return (
-    <section className="bg-primaryWhite">
+    <section id="sessions" className="bg-primaryWhite">
       <div className="mx-auto max-w-screen-xl mt-16 sm:mt-0">
-        <div>
+        <section>
           <div className=" mb-24">
             <h3 className="capitalize font-Inter text-4xl leading-[50px] px-3 sm:px-0 font-bold text-center sm:text-[49px] sm:leading-[60px] mb-6">
               online sessions with the best tutors
@@ -76,8 +76,8 @@ const Sessions = () => {
               </div>
             </div>
           </div>
-        </div>
-        <section className="lg:mt-28 mt-10 px-10">
+        </section>
+        <section id="about" className="lg:mt-28 mt-10 px-10">
           <div className="py-8 sm:py-24">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-20">
               <div className="relative h-52 sm:h-80 lg:order-last lg:h-full">
@@ -90,18 +90,22 @@ const Sessions = () => {
 
               <div className="lg:py-24">
                 <h2 className="text-3xl font-bold font-Inter capitalize sm:leading-[66px] sm:text-[50px]">
-                  we have highly expert & experienced tutors
+                  Get all your Assignments/Projects covered by our highly
+                  experienced teams of Writers
                 </h2>
 
                 <p className="mt-4 text-gray-600">
-                  lorem ipsum is simply dummy text of the printing and
-                  typesetting industry. lorem ipsum has been the industry’s
-                  standard dummy text ever since the 1500s lorem ipsum has been
-                  the industry’s standard dummy text ever since the 1500s
+                  We know that students coming to our essay writing service
+                  expect us to provide them with original content. That's
+                  exactly what we do. We write a paper from scratch while
+                  following your instructions.We assign expert tutors to ensure
+                  students get detailed, step-by-step solutions for their
+                  assignments.Students across the UK and other countries know
+                  who and how professional we are.
                 </p>
 
                 <a
-                  href="#"
+                  href="#contact"
                   className="mt-8 inline-block rounded-full bg-yellow-dark px-12 py-3 text-sm font-medium text-black transition hover:bg-yellow-light focus:outline-none focus:ring focus:ring-yellow-400"
                 >
                   Start Now

@@ -38,7 +38,7 @@ module.exports = {
         blue: "#5360E2",
         darkBlue: "#525FE1",
         slateBlue: "#4F94DF",
-        light: "",
+        light: "#0066ff",
       },
       violet: {
         300: "#B5B2E3",

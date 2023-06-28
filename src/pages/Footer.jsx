@@ -1,4 +1,4 @@
-import phone from "../assets/phn.gif";
+import logo from "../assets/logo-wthout-bg.png";
 
 const Footer = () => {
   return (
@@ -7,16 +7,18 @@ const Footer = () => {
         <div className="flex flex-col gap lg:flex-row lg:gap-28">
           <div className="flex flex-col">
             <div className="flex justify-center text-white sm:justify-start">
-              <span className="text-[25px] tracking-[10px] border border-white p-2">
+              {/* <span className="text-[25px] tracking-[10px] border border-white p-2">
                 LOGO
-              </span>
+              </span> */}
+              <img src={logo} className="w-24" />
             </div>
             <div className="flex flex-col mt-10 gap-2 leading-[30px] ">
               <span className="font-inter">
-                <strong>Email</strong>: support@thetutorlancer.com
+                <strong>Email</strong>: support@thegeniustutor.com
               </span>
               <span className="font-inter">
-                <strong>Phone</strong>: +91 628940944
+                <strong>Phone</strong>:{" "}
+                <a href="tel:919155424588">+91 91554 24588</a>
               </span>
               <span className="font-inter capitalize text-base">
                 <strong>Address</strong>: c/o -s.k.mishra, c.m.r.i <br />
@@ -35,7 +37,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-white transition hover:text-white/75"
-                      href="/"
+                      href="#services"
                     >
                       Online Tutoring
                     </a>
@@ -44,7 +46,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-white transition hover:text-white/75"
-                      href="/"
+                      href="#services"
                     >
                       Homework Help
                     </a>
@@ -53,9 +55,36 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-white transition hover:text-white/75"
-                      href="/"
+                      href="#services"
                     >
                       Live Session
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      className="text-white transition hover:text-white/75"
+                      href="#services"
+                    >
+                      Lab Work
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      className="text-white transition hover:text-white/75"
+                      href="#services"
+                    >
+                      Project Help
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      className="text-white transition hover:text-white/75"
+                      href="#services"
+                    >
+                      Writing Help
                     </a>
                   </li>
                 </ul>
@@ -64,22 +93,22 @@ const Footer = () => {
 
             <div>
               {/* mobile image */}
-              <img
+              {/* <img
                 src={phone}
                 alt="phone"
                 className="absolute lg:left-72 hidden md:block -top-72 h-96 lg:h-[30rem]"
-              />
+              /> */}
             </div>
           </div>
         </div>
       </div>
-      <div className="mt-12 w-full border-t border-white pt-6 pb-12">
+      <div className="mt-12 sm:flex place-content-center md:block w-full border-t border-white pt-6 pb-12">
         <div className=" mx-auto max-w-screen-xl px-4 text-center sm:flex sm:justify-between sm:text-left">
           <div className="flex flex-row">
             <div className="flex flex-row gap-3 ">
               <a
                 className="inline-block text-white transition hover:text-white/75"
-                href="/"
+                href="/termsandcondition"
               >
                 Terms & Conditions
               </a>
@@ -90,7 +119,7 @@ const Footer = () => {
             <div className="flex flex-row gap-3 ">
               <a
                 className="inline-block text-teal-600 transition hover:text-teal-600/75"
-                href="/"
+                href="/privacy"
               >
                 Privacy Policy
               </a>
@@ -100,7 +129,7 @@ const Footer = () => {
             <div className="flex sm:flex-row gap-3 ">
               <a
                 className="inline-block text-teal-600 transition hover:text-teal-600/75"
-                href="/"
+                href="/refund"
               >
                 Refund
               </a>
@@ -108,7 +137,7 @@ const Footer = () => {
           </div>
 
           <p className="mt-4 text-[10px] sm:text-sm text-gray-500 sm:order-first sm:mt-0">
-            © 2022 thetutorlancer.com. All rights reserved Abhay Education Pvt.
+            © 2022 thegeniustutor.com. All rights reserved Abhay Education Pvt.
             Ltd.
           </p>
         </div>

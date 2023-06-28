@@ -6,9 +6,9 @@ const MainCard = ({ icon, iconBgColor, title, description }) => {
       <div className="">
         {/* icon */}
         <div
-          className={`w-10 h-10 rounded items-center justify-center flex ${iconBgColor}`}
+          // className={`w-10 h-10 rounded items-center justify-center flex ${iconBgColor}`}
         >
-          <img src={icon} alt="Icon" className="w-6 h-6" />
+          <img src={icon} alt="Icon" className="w-20 h-auto" />
         </div>
       </div>
       <span className="font-semibold md:text-base font-Inter sm:text-[24px]">{title}</span>

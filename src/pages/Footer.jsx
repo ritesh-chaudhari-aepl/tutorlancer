@@ -4,40 +4,44 @@ const Footer = () => {
   return (
     <footer aria-label="Site Footer" className="bg-[#525FE1] text-white">
       <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap lg:flex-row lg:gap-28">
-          <div className="flex flex-col">
-            <div className="flex justify-center text-white sm:justify-start">
+        <div className="flex sm:items-center sm:text-center md:items-start md:text-left flex-col gap lg:flex-row lg:gap-28">
+          <div className="flex flex-col basis-1/2 ">
+            <div className="flex justify-center text-black sm:justify-start">
               {/* <span className="text-[25px] tracking-[10px] border border-white p-2">
                 LOGO
               </span> */}
-              <img src={logo} className="w-24" />
+              <img src={logo} className="w-24" alt="logo" />
             </div>
             <div className="flex flex-col mt-10 gap-2 leading-[30px] ">
-              <span className="font-inter">
-                <strong>Email</strong>: support@thegeniustutor.com
-              </span>
+              <p>
+                Genius Tutors is an online platform that connects online tutors
+                with students across the globe who seeks academic help.
+              </p>
+              {/* <span className="font-inter">
+                <strong>Email</strong>: support@thegoodgrades.com
+              </span> */}
               <span className="font-inter">
                 <strong>Phone</strong>:{" "}
-                <a href="tel:919155424588">+91 91554 24588</a>
+                <a href="tel:917761814102">+91 77618-14102</a>
               </span>
-              <span className="font-inter capitalize text-base">
+              {/* <span className="font-inter capitalize text-base">
                 <strong>Address</strong>: c/o -s.k.mishra, c.m.r.i <br />
                 gate, bartand, dhanbad, jharkhand,
                 <br /> india (826001){" "}
-              </span>
+              </span> */}
             </div>
           </div>
 
-          <div className="grid mt-10 lg:mt-0 grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:col-span-2 relative">
+          <div className="flex basis-1/4 flex-col mt-10 lg:mt-0 grid-cols-3 gap-2 sm:grid-cols-2 md:grid-cols-2 lg:col-span-2 relative">
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900">Services</p>
+              <p className="text-lg font-medium text-black">Services</p>
 
               <nav aria-label="Footer About Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
                   <li>
                     <a
-                      className="text-white transition hover:text-white/75"
-                      href="#services"
+                      className="text-black transition hover:text-black/75"
+                      href="/"
                     >
                       Online Tutoring
                     </a>
@@ -45,8 +49,8 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-white transition hover:text-white/75"
-                      href="#services"
+                      className="text-black transition hover:text-black/75"
+                      href="/"
                     >
                       Homework Help
                     </a>
@@ -54,8 +58,8 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-white transition hover:text-white/75"
-                      href="#services"
+                      className="text-black transition hover:text-black/75"
+                      href="/"
                     >
                       Live Session
                     </a>
@@ -63,17 +67,8 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-white transition hover:text-white/75"
-                      href="#services"
-                    >
-                      Lab Work
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-white transition hover:text-white/75"
-                      href="#services"
+                      className="text-black transition hover:text-black/75"
+                      href="/"
                     >
                       Project Help
                     </a>
@@ -81,8 +76,17 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-white transition hover:text-white/75"
-                      href="#services"
+                      className="text-black transition hover:text-black/75"
+                      href="/"
+                    >
+                      Lab Work
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      className="text-black transition hover:text-black/75"
+                      href="/"
                     >
                       Writing Help
                     </a>
@@ -93,7 +97,26 @@ const Footer = () => {
 
             <div>
               {/* mobile image */}
-              {/* <img
+              {/* <Image
+                src={phone}
+                alt="phone"
+                className="absolute lg:left-72 hidden md:block -top-72 h-96 lg:h-[30rem]"
+              /> */}
+            </div>
+          </div>
+
+          <div className="flex basis-1/4 xl:self-end flex-col mt-10 grid-cols-3 gap-2 sm:grid-cols-2 md:grid-cols-2 lg:col-span-2 relative">
+            <div className="text-center sm:text-left">
+              <span className="font-inter capitalize text-base">
+                <strong>Address</strong>: c/o -s.k.mishra, c.m.r.i <br />
+                gate, bartand, dhanbad, jharkhand,
+                <br /> india (826001){" "}
+              </span>
+            </div>
+
+            <div>
+              {/* mobile image */}
+              {/* <Image
                 src={phone}
                 alt="phone"
                 className="absolute lg:left-72 hidden md:block -top-72 h-96 lg:h-[30rem]"

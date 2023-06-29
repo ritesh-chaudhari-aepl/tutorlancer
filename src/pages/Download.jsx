@@ -83,7 +83,7 @@
 import downloadImg from "../assets/download.png";
 // import google from "../assets/google.svg";
 // import { AiFillApple } from "react-icons/ai";
-import phone from "../assets/phone.gif";
+// import phone from "../assets/phone.gif";
 // import Image from "next/image";
 
 const Download = () => {
@@ -166,11 +166,11 @@ const Download = () => {
         </div>
       </div>
       <div className="absolute left-[34rem] top-[0rem] xl:left-[57rem] xl:top-[-12rem] lg:left-[46rem]">
-        <img
+        {/* <img
           src={phone}
           alt="phone-gif"
           className="relative top-10 mt-4 lg:w-[80%]"
-        />
+        /> */}
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { HiOutlineX } from "react-icons/hi";
 import { AiOutlineMenu } from "react-icons/ai";
 import Nav from "./navbar/Navbar";
-import MobileNav from "./navbar/Mobilenav";
+import MobileNav from "./navbar/MobileNav";
 import { BsWhatsapp } from "react-icons/bs";
 import logo from "../../assets/D13_Logo.png";
 
@@ -20,17 +20,17 @@ function Header({ myRef }) {
       window.scrollY > 70 ? setIsActive(true) : setIsActive(false);
     });
   });
-  function handleScroll(section) {
-    let value = document.getElementById(section);
-    console.log(value);
-    if (value) {
-      value.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-        inline: "center",
-      });
-    }
-  }
+  // function handleScroll(section) {
+  //   let value = document.getElementById(section);
+  //   console.log(value);
+  //   if (value) {
+  //     value.scrollIntoView({
+  //       behavior: "smooth",
+  //       block: "center",
+  //       inline: "center",
+  //     });
+  //   }
+  // }
   return (
     <header
       className={`${

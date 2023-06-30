@@ -33,14 +33,14 @@ const Footer = () => {
           </div>
 
           <div className="flex basis-1/4 flex-col mt-10 lg:mt-0 grid-cols-3 gap-2 sm:grid-cols-2 md:grid-cols-2 lg:col-span-2 relative">
-            <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-black">Services</p>
+            <div className="">
+              <p className="text-lg font-medium text-white">Services</p>
 
               <nav aria-label="Footer About Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
                   <li>
                     <a
-                      className="text-black transition hover:text-black/75"
+                      className="text-white transition hover:text-black/75"
                       href="/"
                     >
                       Online Tutoring
@@ -49,7 +49,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-black transition hover:text-black/75"
+                      className="text-white transition hover:text-black/75"
                       href="/"
                     >
                       Homework Help
@@ -58,7 +58,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-black transition hover:text-black/75"
+                      className="text-white transition hover:text-black/75"
                       href="/"
                     >
                       Live Session
@@ -67,7 +67,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-black transition hover:text-black/75"
+                      className="text-white transition hover:text-black/75"
                       href="/"
                     >
                       Project Help
@@ -76,7 +76,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-black transition hover:text-black/75"
+                      className="text-white transition hover:text-black/75"
                       href="/"
                     >
                       Lab Work
@@ -85,7 +85,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-black transition hover:text-black/75"
+                      className="text-white transition hover:text-black/75"
                       href="/"
                     >
                       Writing Help
@@ -105,8 +105,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex basis-1/4 xl:self-end flex-col mt-10 grid-cols-3 gap-2 sm:grid-cols-2 md:grid-cols-2 lg:col-span-2 relative">
-            <div className="text-center sm:text-left">
+          <div className="mt-6 lg:mt-0">
+            <div className="">
               <span className="font-inter capitalize text-base">
                 <strong>Address</strong>: c/o -s.k.mishra, c.m.r.i <br />
                 gate, bartand, dhanbad, jharkhand,
@@ -126,11 +126,11 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-12 sm:flex place-content-center md:block w-full border-t border-white pt-6 pb-12">
-        <div className=" mx-auto max-w-screen-xl px-4 text-center sm:flex sm:justify-between sm:text-left">
-          <div className="flex flex-row">
-            <div className="flex flex-row gap-3 ">
+        <div className=" mx-auto max-w-screen-xl px-4 items-center sm:flex sm:justify-between sm:text-left">
+          <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row gap-3 items-center ">
               <a
-                className="inline-block text-white transition hover:text-white/75"
+                className="text-[12px] lg:text-base text-white transition hover:text-white/75"
                 href="/termsandcondition"
               >
                 Terms & Conditions
@@ -139,9 +139,9 @@ const Footer = () => {
               <span className="mr-3">|</span>
             </div>
 
-            <div className="flex flex-row gap-3 ">
+            <div className="flex flex-row gap-3 items-center ">
               <a
-                className="inline-block text-teal-600 transition hover:text-teal-600/75"
+                className="text-[12px] lg:text-base text-teal-600 transition hover:text-teal-600/75"
                 href="/privacy"
               >
                 Privacy Policy
@@ -151,7 +151,7 @@ const Footer = () => {
             </div>
             <div className="flex sm:flex-row gap-3 ">
               <a
-                className="inline-block text-teal-600 transition hover:text-teal-600/75"
+                className="text-[12px] lg:text-base text-teal-600 transition hover:text-teal-600/75"
                 href="/refund"
               >
                 Refund
